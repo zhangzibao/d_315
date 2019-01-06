@@ -8,17 +8,9 @@ module.exports = {
             "jsx": true
         }
     },
-    "root": true,
-    "env": {
-        "node": true
-    },
-    "extends": [
-        "plugin:vue/essential",
-        "@vue/typescript"
-    ],
     "rules": {
         // enable additional rules
-        "indent": ["error", 4],
+        "indent": ["warning", 4],
         "linebreak-style": "off",
         "quotes": "off",
         "semi": "off",
@@ -30,5 +22,14 @@ module.exports = {
         // disable rules from base configurations
         "no-console": 2,
         "jsx-no-bind": "off"
-    }
+    },
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "plugin:vue/essential",
+        "@vue/typescript"
+    ],
+
 };
