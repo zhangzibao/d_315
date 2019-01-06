@@ -15,24 +15,21 @@
                       placeholder="账号"/>
         </el-form-item>
         <el-form-item prop="password">
-            <el-input
-                    type="password"
-                    v-model="ruleForm.password"
-                    auto-complete="off"
-                    placeholder="密码"
+            <el-input type="password"
+                      v-model="ruleForm.password"
+                      auto-complete="off"
+                      placeholder="密码"
             />
         </el-form-item>
-        <el-checkbox
-                v-model="checked"
-                checked
-                class="remember">记住密码
+        <el-checkbox v-model="checked"
+                     checked
+                     class="remember">记住密码
         </el-checkbox>
         <el-form-item style="width:100%;">
-            <el-button
-                    type="primary"
-                    style="width:100%;"
-                    @click.native.prevent="Login()"
-                    :loading="logining">登录
+            <el-button type="primary"
+                       style="width:100%;"
+                       @click.native.prevent="Login()"
+                       :loading="logining">登录
             </el-button>
         </el-form-item>
     </el-form>

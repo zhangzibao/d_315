@@ -155,9 +155,10 @@
             this.getAllRecord();
 
         }
+
         //beforeCreate
-        private beforeCreate():void{
-            if(!this.$store.state.isLogin){
+        private beforeCreate(): void {
+            if (!this.$store.state.isLogin) {
                 this.$router.replace('/login')
             }
         }
