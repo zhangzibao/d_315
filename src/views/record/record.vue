@@ -7,7 +7,7 @@
             <el-row :span="4"
                     type="flex"
             >
-                <el-input v-model="record_id" type="number" placeholder="请输入记录id"></el-input>
+                <el-input v-model="record_id" type="number" placeholder="请输入记录id"/>
             </el-row>
             <el-row type="flex"
                     style="margin-right: 20px"
@@ -32,7 +32,7 @@
                       style="width: 800px;min-height: 426px;"
                       stripe
                       :data="RecordList.slice((currentPage - 1) * pageSize, currentPage * pageSize)">
-                <el-table-column prop="id" label="id" width="60"></el-table-column>
+                <el-table-column prop="id" label="id" width="60"/>
                 <el-table-column prop="endBalance" label="当前余额（元）" width="120"/>
                 <el-table-column prop="changeValue" label="消费金额（元）" width="120"/>
                 <el-table-column prop="changeReason" label="消费原因"/>
