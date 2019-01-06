@@ -14,7 +14,7 @@
             >
                 <el-button type="primary"
                            icon="el-icon-search"
-                           @click="gotoRecord">
+                           @click="gotoRecord()">
                     搜索
                 </el-button>
             </el-row>
@@ -48,7 +48,7 @@
                            :page-size="pageSize"
                            layout="prev, pager, next"
                            :total="itemTotal"
-                           @current-change="current_change"/>
+                           @current-change="current_change()"/>
         </el-row>
         <!--弹出对话框-->
         <el-dialog :visible.sync="dialogVisible"
@@ -81,7 +81,7 @@
             </el-form>
             <el-row type="flex" justify="end">
                 <el-button @click="dialogVisible = false">取消</el-button>
-                <el-button type="primary" @click="addRecord">保存</el-button>
+                <el-button type="primary" @click="addRecord()">保存</el-button>
             </el-row>
         </el-dialog>
     </el-col>
