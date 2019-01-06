@@ -7,8 +7,7 @@
                 justify="space-between"
                 style="margin-bottom: 20px;padding:0 20px"
         >
-            <el-col
-                    :span="8"
+            <el-col :span="8"
                     type="flex"
                     justify="center"
                     align="middle"
@@ -34,8 +33,7 @@
             <el-col type="flex"
                     style="max-width:260px;padding-left:20px;height:100%"
             >
-                <el-menu
-                        :router="true"
+                <el-menu :router="true"
                         class="el-menu-vertical-demo"
                         :default-active="activeNav"
                 >
