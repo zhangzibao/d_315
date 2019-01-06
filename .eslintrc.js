@@ -10,7 +10,7 @@ module.exports = {
     },
     "rules": {
         // enable additional rules
-        "indent": ["warning", 4],
+        "indent": "off",
         "linebreak-style": "off",
         "quotes": "off",
         "semi": "off",
