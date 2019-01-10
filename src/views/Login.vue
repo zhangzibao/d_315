@@ -62,6 +62,8 @@
             ]
         };
         private checked: boolean = true;
+
+        // $refs
         public $refs!: {
             validate: HTMLFormElement
         };
