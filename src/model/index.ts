@@ -4,7 +4,6 @@ export interface User {
     password: string;
     chineseName: string;
     isAdmin: number;
-
 }
 
 export interface Record {
@@ -13,5 +12,4 @@ export interface Record {
     changeValue: number;
     endBalance?: number;
     addTime?: string;
-
 }

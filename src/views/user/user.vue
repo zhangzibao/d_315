@@ -42,7 +42,7 @@
                 style="margin:20px"
         >
             <el-pagination background :page-size="pageSize" layout="prev, pager, next" :total="itemTotal"
-                           @current-change="current_change()"/>
+                           @current-change="current_change"/>
         </el-row>
         <!--弹出对话框-->
         <el-dialog :visible.sync="dialogVisible"
