@@ -110,7 +110,7 @@
         private itemTotal: number = 0;
         private form: Form = {
             changeValue: 0,
-            changeReason: '',
+            changeReason: ''
         };
 
         // methods
@@ -127,13 +127,13 @@
 
         private gotoRecord(): void {
             api.getRecord(this.record_id).then((data: any) => {
-                this.RecordList = [];
+                this.RecordList.splice(0);
                 this.RecordList.push(data);
                 this.itemTotal = this.RecordList.length;
                 this.currentPage = 1;
-                if (this.RecordList.length === 0) {
-                    console.log('消费记录不存在');
-                }
+                // if (this.RecordList.length === 0) {
+                // console.log('消费记录不存在');
+                // }
             })
         }
 

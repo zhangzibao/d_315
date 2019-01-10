@@ -127,13 +127,13 @@
         private gotoUser(): void {
             api.getUser(this.user_id).then((data: any) => {
                 // console.log(data)
-                this.UserList = [];
+                this.UserList.splice(0);
                 this.UserList.push(data);
                 this.itemTotal = this.UserList.length;
                 this.currentPage = 1;
-                if (this.UserList.length === 0) {
-                    console.log('用户不存在');
-                }
+                // if (this.UserList.length === 0) {
+                // console.log('用户不存在');
+                // }
             })
         }
 
