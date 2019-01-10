@@ -106,7 +106,7 @@
         private dialogVisible: boolean = false;
         private currentPage: number = 1;
         private pageSize: number = 8;
-        private record_id: number = 0;
+        private record_id: string = '';
         private itemTotal: number = 0;
         private form: Form = {
             changeValue: 0,

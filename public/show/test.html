@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .test {
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+            min-height: 20px;
+            margin: 100px auto;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: #000;
+            margin: 10px auto;
+            line-height: 200px;
+            text-align: center;
+            color: #fff;
+            border-radius: 100%;
+        }
+
+        .active {
+            /*background: red;*/
+            animation: my_first 2s;
+        }
+
+        @keyframes my_first {
+
+            0% {
+                background: red;
+                transform: rotate3d(0, 0, 0, 0deg);
+            }
+            25% {
+                background: yellow;
+                transform: rotate3d(152, 535, 50, 90deg);
+            }
+            50% {
+                background: blue;
+                transform: rotate3d(20, 58, 53, 180deg);
+            }
+            75% {
+                background: orange;
+                transform: rotate3d(85, 125, 866, 270deg);
+            }
+            100% {
+                background: green;
+                transform: rotate3d(24, 787, 787, 0deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body class="test">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<script type="text/javascript">
+    let btns = document.querySelectorAll('div');
+    btns.forEach((value, key) => {
+        value.addEventListener("click", () => {
+            if (value.classNames !== "active") {
+                value.className = "active";
+            }
+            for (let i = 0; i < btns.length; i++) {
+                if (i !== key) {
+                    btns[i].className = ""
+                } else {
+                    setTimeout(() => {
+                        value.className = "";
+                    }, 2000)
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>

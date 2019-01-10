@@ -97,7 +97,7 @@
         private UserList: Array<User> = [];
         private loading: boolean = true;
         private dialogVisible: boolean = false;
-        private user_id: number = 0;
+        private user_id: string = '';
         private currentPage: number = 1;
         private pageSize: number = 8;
         private itemTotal: number = 0;
